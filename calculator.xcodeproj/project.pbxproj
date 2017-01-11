@@ -15,6 +15,7 @@
 		FAC3F3CE1E1E18AC00D381B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC3F3CC1E1E18AC00D381B6 /* LaunchScreen.storyboard */; };
 		FAC3F3D91E1E18AC00D381B6 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3F3D81E1E18AC00D381B6 /* calculatorTests.swift */; };
 		FAC3F3E41E1E18AC00D381B6 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3F3E31E1E18AC00D381B6 /* calculatorUITests.swift */; };
+		FAF92A2F1E207C880095C374 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF92A2E1E207C880095C374 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FAC3F3DF1E1E18AC00D381B6 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC3F3E31E1E18AC00D381B6 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		FAC3F3E51E1E18AC00D381B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF92A2E1E207C880095C374 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		FAC3F3B41E1E18AB00D381B6 = {
 			isa = PBXGroup;
 			children = (
+				FAF92A2E1E207C880095C374 /* Storyboard.storyboard */,
 				FAC3F3BF1E1E18AC00D381B6 /* calculator */,
 				FAC3F3D71E1E18AC00D381B6 /* calculatorTests */,
 				FAC3F3E21E1E18AC00D381B6 /* calculatorUITests */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC3F3CE1E1E18AC00D381B6 /* LaunchScreen.storyboard in Resources */,
+				FAF92A2F1E207C880095C374 /* Storyboard.storyboard in Resources */,
 				FAC3F3CB1E1E18AC00D381B6 /* Assets.xcassets in Resources */,
 				FAC3F3C61E1E18AC00D381B6 /* Main.storyboard in Resources */,
 			);
@@ -507,6 +511,7 @@
 				FAC3F3EA1E1E18AC00D381B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC3F3EB1E1E18AC00D381B6 /* Build configuration list for PBXNativeTarget "calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				FAC3F3ED1E1E18AC00D381B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC3F3EE1E1E18AC00D381B6 /* Build configuration list for PBXNativeTarget "calculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				FAC3F3F01E1E18AC00D381B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
