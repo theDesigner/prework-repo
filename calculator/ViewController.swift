@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SiewController: UIViewController {
+class ViewController: UIViewController {
 
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalsLabel: UILabel!

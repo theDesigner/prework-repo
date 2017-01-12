@@ -12,7 +12,7 @@
         <!--Tip Jar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SiewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8zo-Gp-AiN"/>
                         <viewControllerLayoutGuide type="bottom" id="2Xo-pw-KIg"/>
@@ -95,6 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Jar" id="Ab5-Yb-NtU"/>
                     <connections>
+                        <outlet property="billField" destination="fab-NM-5vg" id="eN6-5J-0Ra"/>
                         <outlet property="tipControl" destination="dyc-dB-wht" id="Bka-6B-rTU"/>
                         <outlet property="tipLabel" destination="Xub-V4-taG" id="DHB-NS-kaI"/>
                         <outlet property="totalsLabel" destination="Rph-eb-Lk7" id="MfX-fb-5o7"/>
