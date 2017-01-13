@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     }
     @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
+        //  Fade Bill Total Animation
         self.billField.alpha = 0
         self.billTotal.alpha = 1
         UIView.animate(withDuration: 0.4, animations: {
-            // This causes first view to fade in and second view to fade out
             self.billField.alpha = 1
             self.billTotal.alpha = 0
         })
