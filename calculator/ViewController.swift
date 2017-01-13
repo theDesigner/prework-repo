@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
     @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
+        
         self.billField.alpha = 0
         self.billTotal.alpha = 1
         UIView.animate(withDuration: 0.4, animations: {
