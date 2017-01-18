@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalsLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
-    @IBOutlet weak var billTotal: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +25,6 @@ class ViewController: UIViewController {
     }
     @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
-        //  Fade Bill Total Animation
-        self.billField.alpha = 0
-        self.billTotal.alpha = 1
-        UIView.animate(withDuration: 0.4, animations: {
-            self.billField.alpha = 1
-            self.billTotal.alpha = 0
-        })
     
     }
     @IBAction func newCalculateTip(_ sender: AnyObject) {

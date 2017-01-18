@@ -63,21 +63,14 @@
                                     <action selector="newCalculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="eG0-IP-n2Y"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="fab-NM-5vg">
-                                <rect key="frame" x="89" y="92" width="270" height="99"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" text="Bill Total" textAlignment="right" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="fab-NM-5vg">
+                                <rect key="frame" x="16" y="92" width="343" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Total" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63Q-XN-4Qi">
-                                <rect key="frame" x="70" y="146" width="289" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.13618773221969604" green="0.041974067687988281" blue="0.17204627394676208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -88,7 +81,6 @@
                     <navigationItem key="navigationItem" title="Tip Jar" id="Ab5-Yb-NtU"/>
                     <connections>
                         <outlet property="billField" destination="fab-NM-5vg" id="Ivz-pp-3Fh"/>
-                        <outlet property="billTotal" destination="63Q-XN-4Qi" id="xm0-ta-1aT"/>
                         <outlet property="tipControl" destination="dyc-dB-wht" id="Bka-6B-rTU"/>
                         <outlet property="tipLabel" destination="Xub-V4-taG" id="DHB-NS-kaI"/>
                         <outlet property="totalsLabel" destination="Rph-eb-Lk7" id="MfX-fb-5o7"/>
@@ -97,7 +89,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="KY2-7Q-weG">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="d2y-uk-FJ1"/>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="dcJ-4b-EDc"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
