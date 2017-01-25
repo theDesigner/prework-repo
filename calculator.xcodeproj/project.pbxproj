@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					FAC3F3BC1E1E18AB00D381B6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6G6WQ7C4D2;
 						ProvisioningStyle = Automatic;
 					};
 					FAC3F3D31E1E18AC00D381B6 = {
@@ -414,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6G6WQ7C4D2;
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielmcglaughlin.calculator;
@@ -426,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6G6WQ7C4D2;
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielmcglaughlin.calculator;
