@@ -33,12 +33,11 @@ class ViewController: UIViewController {
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
-        
-        
+    
         tipLabel.text = String(format: "$%.2f", tip)
         totalsLabel.text = String(format: "$%.2f", total)
 
-        
+        UIView.animate(withDuration: <#T##TimeInterval#>, animations: <#T##() -> Void#>)
     }
-
+    
 }
