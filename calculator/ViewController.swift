@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalsLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var uglyCodeView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,12 @@ class ViewController: UIViewController {
     
         tipLabel.text = String(format: "$%.2f", tip)
         totalsLabel.text = String(format: "$%.2f", total)
-
-        UIView.animate(withDuration: <#T##TimeInterval#>, animations: <#T##() -> Void#>)
+        
+        uglyCodeView.isHidden = false
+        uglyCodeView.alpha = 0
+        UIView.animate(withDuration: 0.075, animations: {
+            self.uglyCodeView.alpha = 1
+        })
     }
     
 }
