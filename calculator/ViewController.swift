@@ -50,6 +50,8 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1, animations: {
             print("start animate")
             self.uglyCodeView.alpha = 1
+            self.billField.frame.origin.x = 300
+            self.billField.frame.origin.y = 300
         })
     }
     
