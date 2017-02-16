@@ -50,7 +50,7 @@
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="newCalculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Av-kA-ogu"/>
+                                            <action selector="segmentValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="kuU-C5-Slb"/>
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
@@ -65,7 +65,8 @@
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="newCalculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ltn-ec-aPH"/>
+                                    <action selector="billFieldDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="n8Z-9p-pUY"/>
+                                    <action selector="billFieldValueDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="uzn-QH-MEh"/>
                                 </connections>
                             </textField>
                         </subviews>

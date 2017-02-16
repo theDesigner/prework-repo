@@ -15,11 +15,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var uglyCodeView: UIView!
+    var billAmount:Double = 0.0
+    var tipAmount:Double = 0.0
+    var total:Double = 0.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        uglyCodeView.isHidden = false
+        uglyCodeView.alpha = 0
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
@@ -28,21 +38,40 @@ class ViewController: UIViewController {
         view.endEditing(true)
     
     }
-    @IBAction func newCalculateTip(_ sender: AnyObject) {
-       
-        let tipPercentages = [0.15, 0.18, 0.20]
-        let bill = Double(billField.text!) ?? 0
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
-        let total = bill + tip
+    @IBAction func billFieldValueDidChange(_ sender: Any) {
+                self.doMath()
+                self.updateAllValueViews()
     
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalsLabel.text = String(format: "$%.2f", total)
-        
-        uglyCodeView.isHidden = false
-        uglyCodeView.alpha = 0
-        UIView.animate(withDuration: 0.075, animations: {
+    }
+    
+    @IBAction func billFieldDidBegin(_ sender: Any) {
+
+
+        UIView.animate(withDuration: 1, animations: {
+            print("start animate")
             self.uglyCodeView.alpha = 1
         })
     }
     
+    @IBAction func segmentValueDidChange(_ sender: Any) {
+        self.doMath()
+        self.updateAllValueViews()
+        
+        //Other animations
+    }
+    
+    func updateAllValueViews(){
+        tipLabel.text = String(format: "$%.2f", self.tipAmount)
+        totalsLabel.text = String(format: "$%.2f", self.total)
+    }
+    
+    
+    func doMath() {
+        let tipPercentages = [0.15, 0.18, 0.20]
+        let bill = Double(billField.text!) ?? 0
+        self.tipAmount = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        self.total = bill + self.tipAmount
+    }
+    
+
 }
