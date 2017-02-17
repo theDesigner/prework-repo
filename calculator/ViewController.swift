@@ -47,11 +47,11 @@ class ViewController: UIViewController {
     @IBAction func billFieldDidBegin(_ sender: Any) {
 
 
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.4, animations: {
             print("start animate")
             self.uglyCodeView.alpha = 1
-            self.billField.frame.origin.x = 300
-            self.billField.frame.origin.y = 300
+            self.billField.frame.origin.x = -18
+            self.billField.frame.origin.y = 115
         })
     }
     
